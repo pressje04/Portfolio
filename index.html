@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jackson Press</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jackson Press</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/jp_profile_pic.png" alt="Jackson Press Profile Picture">
+        </div>
+        <div class="section__text">
+            <p  class="section__text__p1">My name is</p>
+            <h1 class="title">Jackson Press</h1>
+            <p class="section_text_p2">Undergraduate at Virginia Tech</p>
+            <div class="btn-container ">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Press_Jackson_resume.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/jpress736'"></img>
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/pressje04'"></img>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/vt_seal.png" alt="Virginia Tech Logo" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Programming Experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="eductation icon" class="icon">
+                        <h3>Eductation</h3>
+                        <p>B.S. in Computer Science<br>(in progress)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>When I was young, I was obsessed with computers as well as video games. I was always
+                        so fascinated with the inner workings of computers and how we as humans 
+                        can communicate with them so effectively. Fast forward to now, this passion has led me to 
+                        pursue a computer science degree at Virginia Tech, where I am currently in my third year. 
+                        <br><br>
+                        Currently, I am diving into web development as well as introductory machine learning concepts. 
+                        I believe that you need to have a true passion in order to succeed with programming because being
+                        self-motivated to learn is required. The project I am currently working on is a 
+                        machine learning model that will analyze data regarding professional sports players 
+                        as well as make predictions about their in-game statistics. 
+                        <br><br>
+                        Whenever I am not at my desk coding, there is a good chance I am obsessing over my favorite sports teams
+                        or unwinding with music from my ever-growing record collection.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>MATLAB</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article> 
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/sport_model.jpg" 
+                    alt="Sports Model Image"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Sports Betting Model</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Github
+                </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Asteroids_game.png" 
+                    alt="Asteroids Image"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Asteroids Recreation</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Github
+                </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Portfolio.png" 
+                    alt="Portfolio Image"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Personal Portfolio Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Github
+                </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href= "mailto:jacksonpress736@gmail.com">jacksonpress736@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="Linkedin icon" 
+                class="icon contact-icon">
+                <p><a href= "https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Jackson Press. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
